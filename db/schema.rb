@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20130216180057) do
   create_table "items", :force => true do |t|
     t.string   "name"
     t.integer  "quantity"
-    t.datetime "date"
+    t.date     "date"
     t.integer  "family_id"
     t.integer  "inventory_id"
     t.datetime "created_at",   :null => false
