@@ -1,29 +1,48 @@
 <h1>Current Inventory</h1>
-	<div class="container">
+ 	<div class="container">
 	 	<aside>
 		  	<div class="cabin">
-			  		
-					<img src="assets/cabin.jpg" alt="cabinicon">
+			  		<img src="images/cabin.jpg" alt="cabinicon">
 						<h2>Details</h2>
-						<h3>Location</h2>
+						<h3>Location</h3>
 							<ul>
 								<li>1829 Mountainview Road</li>
 								<li>Tahoe, California 839290</li>
 							</ul>
-						<h3>Emergency Contact</h2>
+						<h3>Emergency Contact</h3>
 							<ul>
-								<li>Bob McCaffery, Handy Man</li>
+								<li>Bob McCaffery, Handyman</li>
 								<li>(876)637-9273</li>
 							</ul>
 					</div>	
-					<div class="family">
+					
 						<h2>Families</h2>		
-							<h3>Ruby Family Name</h2>
-								<ul>
-									<li>Name 1</li>
-									<li>Name 2</li>
-								</ul>
-					</div>
+							<div class="family">	
+								<img src="images/huxtables.jpg" alt="TheHuxtables">
+									<ul>
+										<li><span>The Huxtables</span></li>
+										<li>Cliff</li>
+										<li>Claire</li>
+										<li>Theo</li>
+										<li>Vanessa</li>
+										<li>Denise</li>
+										<li>Rudy</li>
+									</ul>
+								<div class="clear"></div>
+							</div>
+							
+							<div class="family">	
+								<img src="images/seavers.jpg" alt="TheSeavers">
+									<ul>
+										<li><span>The Seavers</span></li>
+										<li>Jason</li>
+										<li>Maggie</li>
+										<li>Mike</li>
+										<li>Carol</li>
+										<li>Ben</li>
+									</ul>
+								<div class="clear"></div>
+							</div>	
 		</aside>
 
 		<div class="primary">
@@ -39,7 +58,7 @@
 					</tr>
 			</table>	
 		</div>	
-	</div>
+	</div>	
 
 
 <% @items.each do |item| %>

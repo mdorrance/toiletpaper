@@ -64,22 +64,29 @@ aside {
 header {
 	background-color: #1B4150;
 	margin: auto;
-	line-height: 20px;
 	overflow: hidden;
 	width: 100%;
 }
+span{
 
+	color: #252525;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: 600;
+}
 
 
 h1, h2, h3, h4, h5, h6, th {
 	font-family: 'Bitter', serif;
 	text-transform: uppercase;
-	line-height: 40px;
+	line-height: 20px;
 }
 
 h1{
 color: white;
-font-size: 24px;	
+font-size: 24px;
+line-height: 100px;
+text-align: left;	
 }
 
 th {
@@ -90,53 +97,85 @@ th {
 
 h3, th{
 	font-size: 12px;
-	color: #625c5e;
+	color: #9f9f9f;
 	font-weight: 700;
-	
+	padding: 10px 0 0 0;
 }
 
 h2{
 	font-size: 18px;
 	color: #5EB03B;
 	font-weight: 700;
-
+	border-bottom: 1px solid #5EB03B;
+	margin-top: 40px;
 }
 
 li {
-	color: #252525;
+	font-size: 14px;
 	line-height: 24px;
+}
+
+li, td {
+	color: #252525;
+	font-family: 'Cabin', sans-serif;
 }
 
 ul {
 	margin-bottom: 20px;
 }
 
-li, td {
-	font-family: 'Cabin', sans-serif;
-}
-
 td{
-	font-color: #252525;
 	line-height: 80px;
 	padding-right: 40px;
 	text-align: left;
 	width: 230px;
 }
 
+img {
+	float:left;
+}
+
 .family{
+	margin: 20px 0;
+	border-bottom: 1px dotted #9f9f9f;
 	
 }
 
-.cabin{
+.family ul {
+	width: 140px;
+	float: right;
+
+
 
 }
 
 .primary{
 	float: right;
 	width: 540px;
-	margin: 170px 10px 10px 10px;	
+	margin: 50px 10px 10px 10px;	
 }
 
-.inventory {
-
+.clear {
+	clear:both;
 }
+
+
+.loginarea {
+	margin: 10px auto;
+	height: 200px;
+	width: 200px;
+}
+
+.input {
+	margin: 10px 0;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+.loginimage {
+	float: left;
+	margin-left: 400px;
+	width: 75px;
+}
+
+
