@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Toiletpaper</title>
+  <title>Cabin Management</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet'>
 </head>
 <body>
+	<header>
+		<h1>Log Cabin</h1>
+ 	 </header>
 <nav>
   <%= link_to 'Cabin', cabins_url %>
   <%= link_to 'Family', families_url %>

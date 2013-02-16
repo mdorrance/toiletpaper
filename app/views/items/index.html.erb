@@ -12,6 +12,49 @@
     <th></th>
   </tr>
 
+	<div class="container">
+	 	<aside>
+		  	<div class="cabin">
+			  		
+					<img src="images/cabin.jpg" alt="cabinicon">
+						<h2>Details</h2>
+						<h3>Location</h2>
+							<ul>
+								<li>1829 Mountainview Road</li>
+								<li>Tahoe, California 839290</li>
+							</ul>
+						<h3>Emergency Contact</h2>
+							<ul>
+								<li>Bob McCaffery, Handy Man</li>
+								<li>(876)637-9273</li>
+							</ul>
+					</div>	
+					<div class="family">
+						<h2>Families</h2>		
+							<h3>Ruby Family Name</h2>
+								<ul>
+									<li>Name 1</li>
+									<li>Name 2</li>
+								</ul>
+					</div>
+		</aside>
+
+		<div class="primary">
+			<h2>Inventory</h2>	
+			<table class="inventory">
+					<tr>
+						<th>Item</th>
+						<th>Quantity</th>
+					</tr>
+					<tr>
+						<td>RUBY item description name</td>
+						<td>RUBY quantity</td>
+					</tr>
+			</table>	
+		</div>	
+	</div>
+
+
 <% @items.each do |item| %>
   <tr>
     <td><%= item.name %></td>
