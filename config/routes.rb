@@ -1,6 +1,6 @@
 Toiletpaper::Application.routes.draw do
 
-  root :to =>'Items#index'
+  root :to =>'Pages#landing'
   resources :inventories
 
 

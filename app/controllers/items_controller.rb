@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    @items = Item.order('quantity').limit(500).sort {|x,y| x.quantity <=> y.quantity}
 
     respond_to do |format|
       format.html # index.html.erb
