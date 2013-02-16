@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  quantity: 1
+  date: 2013-02-16 10:51:31
+  family_id: 1
+  inventory_id: 1
+
+two:
+  name: MyString
+  quantity: 1
+  date: 2013-02-16 10:51:31
+  family_id: 1
+  inventory_id: 1
