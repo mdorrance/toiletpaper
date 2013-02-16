@@ -50,20 +50,29 @@ table {
 /*CUSTOM STYLES*/
 
 .container {
-	width: 920px;
+	width: 960px;
 	margin: auto;
 }
 
 .boxshadowaside {
 	width: 300px;
-	padding: 20px;
+	margin-top: 50px;
+	padding: 20px 20px 0 20px;
+	background: white;
+	box-shadow: 0px 0px 5px #888;
 }
 
-.boxshadowprimary {
-	width: 540px;
-	padding: 20px;
-	background: white;
-	border: 1px solid #9f9f9f;
+a {
+	background-color: #5EB03B;
+	width: 500px;
+	margin: 20px 0;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Cabin', sans-serif;
+	text-decoration: none;
+	border-radius: 8px;
+
 }
 
 aside {
@@ -103,8 +112,9 @@ text-align: left;
 
 th {
 	text-align: left;
-	line-height: 40px;
+	line-height: 20px;
 	width: 230px;
+	border-bottom: 1px dotted #9f9f9f;
 }
 
 h3, th{
@@ -119,7 +129,7 @@ h2{
 	color: #5EB03B;
 	font-weight: 700;
 	border-bottom: 1px solid #5EB03B;
-	margin-top: 40px;
+	// margin-top: 40px;
 }
 
 li {
@@ -141,6 +151,7 @@ td{
 	padding-right: 40px;
 	text-align: left;
 	width: 230px;
+	border-bottom: 1px dotted #9f9f9f;
 }
 
 img {
@@ -156,15 +167,15 @@ img {
 .family ul {
 	width: 140px;
 	float: right;
-
-
-
 }
 
 .primary{
 	float: right;
 	width: 540px;
 	margin: 50px 10px 10px 10px;
+	padding: 20px;
+	background: white;
+	box-shadow: 0px 0px 5px #888;
 }
 
 .clear {
@@ -172,22 +183,24 @@ img {
 }
 
 
-.loginarea {
-	margin: 10px auto;
-	height: 200px;
-	width: 200px;
-}
 
-.input {
-	margin: 10px 0;
-	border: 1px solid black;
-	padding: 15px;
-}
 
-.loginimage {
-	float: left;
-	margin-left: 400px;
-	width: 75px;
-}
+// .loginarea {
+// 	margin: 10px auto;
+// 	height: 200px;
+// 	width: 200px;
+// }
+
+// .input {
+// 	margin: 10px 0;
+// 	border: 1px solid black;
+// 	padding: 15px;
+// }
+
+// .loginimage {
+// 	float: left;
+// 	margin-left: 400px;
+// 	width: 75px;
+// }
 
 
