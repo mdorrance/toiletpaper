@@ -54,6 +54,18 @@ table {
 	margin: auto;
 }
 
+.boxshadowaside {
+	width: 300px;
+	padding: 20px;
+}
+
+.boxshadowprimary {
+	width: 540px;
+	padding: 20px;
+	background: white;
+	border: 1px solid #9f9f9f;
+}
+
 aside {
 	float: left;
 	width: 300px;
@@ -108,6 +120,22 @@ h2{
 	font-weight: 700;
 	border-bottom: 1px solid #5EB03B;
 	margin-top: 40px;
+}
+
+.item_container {
+	padding: 0 0 0 20px;
+	margin: 20px;
+}
+
+.item_container .field {
+	font-size: 18px;
+	color: #5EB03B;
+	font-weight: 700;
+	margin-top: 40px;	
+}
+
+.spacing {
+	padding: 20px;
 }
 
 li {
