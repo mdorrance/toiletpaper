@@ -1,4 +1,4 @@
-<h1>Listing items</h1>
+<h1>Current Inventory</h1>
 
 <table>
   <tr>
@@ -62,7 +62,6 @@
     <td><%= item.date %></td>
     <td><%= item.family.last_name %></td>
     <td><%= item.inventory.name %></td>
-    <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
