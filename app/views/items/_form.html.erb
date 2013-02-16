@@ -21,15 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
+    <%= f.date_select :date %>
   </div>
   <div class="field">
     <%= f.label :family_id %><br />
-    <%= f.number_field :family_id %>
+    <%= f.collection_select :family_id, Family.all, :id, :last_name %>
   </div>
   <div class="field">
     <%= f.label :inventory_id %><br />
-    <%= f.number_field :inventory_id %>
+    <%= f.collection_select :inventory_id, Inventory.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>

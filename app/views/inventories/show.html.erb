@@ -5,6 +5,12 @@
   <%= @inventory.name %>
 </p>
 
+<p>
+  <b>Items:</b>
+  <% @item.each do |list| %>
+  <%= list.name %>
+  <% end %>
+</p>
 
 <%= link_to 'Edit', edit_inventory_path(@inventory) %> |
 <%= link_to 'Back', inventories_path %>

@@ -17,8 +17,8 @@
     <td><%= item.name %></td>
     <td><%= item.quantity %></td>
     <td><%= item.date %></td>
-    <td><%= item.family_id %></td>
-    <td><%= item.inventory_id %></td>
+    <td><%= item.family.last_name %></td>
+    <td><%= item.inventory.name %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,6 +1,6 @@
 class Family < ActiveRecord::Base
-  attr_accessible :last_name, :photo
+  attr_accessible :last_name, :photo, :person_id
 
-  has_many :people
+  belongs_to :person
   has_many :items
 end

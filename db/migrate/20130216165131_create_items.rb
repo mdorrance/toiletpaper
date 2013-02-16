@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.string :name
       t.integer :quantity
-      t.datetime :date
+      t.date :date
       t.integer :family_id
       t.integer :inventory_id
 

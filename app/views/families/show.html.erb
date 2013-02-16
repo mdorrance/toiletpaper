@@ -6,6 +6,14 @@
 </p>
 
 <p>
+  <b>Members:</b>
+  <% @person.each do |list| %>
+  <%= list.first_name %>
+  <% end %>
+
+</p>
+
+<p>
   <b>Photo:</b>
   <%= @family.photo %>
 </p>

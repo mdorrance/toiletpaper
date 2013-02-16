@@ -3,7 +3,7 @@ class FamiliesController < ApplicationController
   # GET /families.json
   def index
     @families = Family.all
-
+    @people= Person.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @families }
@@ -14,7 +14,7 @@ class FamiliesController < ApplicationController
   # GET /families/1.json
   def show
     @family = Family.find(params[:id])
-
+    @person = Person.where(family_id=params[:id])
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @family }
