@@ -44,8 +44,8 @@ class FamiliesController < ApplicationController
 
     respond_to do |format|
       if @family.save
-        format.html { redirect_to @family, notice: 'Family was successfully created.' }
-        format.json { render json: @family, status: :created, location: @family }
+        format.html { redirect_to items_url, notice: 'Family was successfully created.' }
+        format.json { render json: items_url, status: :created, location: @family }
       else
         format.html { render action: "new" }
         format.json { render json: @family.errors, status: :unprocessable_entity }
@@ -60,7 +60,7 @@ class FamiliesController < ApplicationController
 
     respond_to do |format|
       if @family.update_attributes(params[:family])
-        format.html { redirect_to @family, notice: 'Family was successfully updated.' }
+        format.html { redirect_to items_url, notice: 'Family was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,7 +76,7 @@ class FamiliesController < ApplicationController
     @family.destroy
 
     respond_to do |format|
-      format.html { redirect_to families_url }
+      format.html { redirect_to items_url }
       format.json { head :no_content }
     end
   end
