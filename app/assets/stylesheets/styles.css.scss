@@ -66,9 +66,9 @@ a {
 	background-color: #5EB03B;
 	width: 500px;
 	margin: 20px 0;
-	padding: 10px;
+	padding: 5px;
 	color: white;
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Cabin', sans-serif;
 	text-decoration: none;
 	border-radius: 8px;
@@ -87,6 +87,7 @@ header {
 	margin: auto;
 	overflow: hidden;
 	width: 100%;
+	text-indent: 40px;
 }
 span{
 
@@ -141,7 +142,7 @@ h2{
 	font-size: 18px;
 	color: #5EB03B;
 	font-weight: 700;
-	margin-top: 40px;	
+	margin-top: 40px;
 }
 
 .spacing {
@@ -168,6 +169,7 @@ td{
 	text-align: left;
 	width: 230px;
 	border-bottom: 1px dotted #9f9f9f;
+	text-size: 18px;
 }
 
 img {
