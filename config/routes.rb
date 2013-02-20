@@ -1,5 +1,8 @@
 Toiletpaper::Application.routes.draw do
 
+  resources :to_do_lists
+
+
   root :to =>'Items#index'
   resources :inventories
 

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Task:</b>
+  <%= @to_do_list.task %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%= @to_do_list.family_id %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @to_do_list.created_by %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @to_do_list.due_date %>
+</p>
+
+<p>
+  <b>Completed date:</b>
+  <%= @to_do_list.completed_date %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @to_do_list.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_to_do_list_path(@to_do_list) %> |
+<%= link_to 'Back', to_do_lists_path %>

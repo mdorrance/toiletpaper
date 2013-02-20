@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216180057) do
+ActiveRecord::Schema.define(:version => 20130220210228) do
 
   create_table "cabins", :force => true do |t|
     t.string   "name"
@@ -52,6 +52,17 @@ ActiveRecord::Schema.define(:version => 20130216180057) do
     t.integer  "family_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "to_do_lists", :force => true do |t|
+    t.string   "task"
+    t.integer  "family_id"
+    t.string   "created_by"
+    t.date     "due_date"
+    t.date     "completed_date"
+    t.string   "note"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

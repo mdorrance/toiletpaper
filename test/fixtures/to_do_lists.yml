@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  task: MyString
+  family_id: 1
+  created_by: MyString
+  due_date: 2013-02-20
+  completed_date: 2013-02-20
+  note: MyString
+
+two:
+  task: MyString
+  family_id: 1
+  created_by: MyString
+  due_date: 2013-02-20
+  completed_date: 2013-02-20
+  note: MyString

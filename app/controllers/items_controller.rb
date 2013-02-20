@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.order('quantity').limit(500).sort {|x,y| x.quantity <=> y.quantity}
+    @families= Family.all
 
     respond_to do |format|
       format.html # index.html.erb

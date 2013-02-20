@@ -19,15 +19,20 @@
 
 						<h2>Families</h2>
 							<div class="family">
-								<img src="assets/huxtables.jpg" alt="TheHuxtables">
+								<!-- <img src="assets/huxtables.jpg" alt="TheHuxtables"> -->
 									<ul>
-										<li><span>The Huxtables</span></li>
-										<li>Cliff</li>
-										<li>Claire</li>
-										<li>Theo</li>
-										<li>Vanessa</li>
-										<li>Denise</li>
-										<li>Rudy</li>
+										<% @families.each do |family| %>
+
+                                        <li><span><%= family.last_name %></span></li><br>
+                                        <li><%= image_tag family.photo, :width => 80 %></li>
+                                            <% if family.people.present? %><br>
+                                                <% family.people.each do |person| %>
+                                                <li><%= person.first_name %></li><br>
+
+                                                <% end  %>
+                                            <% end %>
+                                        <hr><% end %>
+
 									</ul>
 								<div class="clear"></div>
 							</div>
@@ -61,6 +66,7 @@
                         <td><%= link_to 'X', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                       </tr>
                     <% end %>
+
 		</div>
 	</div>
 
@@ -72,3 +78,33 @@
 <br />
 
 <%= link_to 'New Item', new_item_path %>
+<br>
+<br>
+<br>
+
+            <h2>To Do List</h2>
+            <table class="inventory">
+                      <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                      </tr>
+                    <% @items.each do |item| %>
+                      <tr>
+                        <td><%= item.name %></td>
+                        <td><%= link_to item.quantity, edit_item_path(item) %></td>
+                        <td><%= link_to 'X', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                      </tr>
+                    <% end %>
+
+        </div>
+    </div>
+
+
+
+
+</table>
+
+<br />
+
+<%= link_to 'New To Do', new_item_path %>
